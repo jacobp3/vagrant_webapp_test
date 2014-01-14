@@ -1,0 +1,23 @@
+div#t2 td table
+{
+  width: 280px;
+  height: 80px;
+}
+
+div#t2 td table,
+div#t2 td th,
+div#t2 td td
+{
+  border: 1px solid black;
+}
+
+div#t2 tr th {
+  height:50%
+}
+
+div#t2 tr.roles td 
+{
+  width:40px;
+  height:50%;
+  background-color:red;
+}

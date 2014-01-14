@@ -1,5 +1,8 @@
+require './lib/jacob.rb'
+
 get '/' do
-  css = '<link type="text/css" href="./css/humanity/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"></link>'
+  css = '<link type="text/css" href="./css/humanity/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"></link>'+
+        '<link type="text/css" href="./css/jacob.css" rel="stylesheet"></link>'
 
   scripts = '<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>' +
             '<script type="text/javascript" src="./js/jquery-ui-1.10.3.custom.min.js"></script>' +
@@ -11,7 +14,8 @@ get '/' do
 
   tab_divs = '<div id="t1"><h3>Enter some text:</h3><input type="text" id="i1"><br><button id="b1">'+
              'Submit</button><table border="1"><tr><td><a id="Customer/gciNumber" value="gciCode" '+ 
-             'title="customerName" onclick=""/>something</td></tr></table></div><div id="t2"></div>'
+             'title="customerName" onclick=""/>something</td></tr></table></div><div id="t2">'+
+             initTown + '</div>'
 
   '<html><head>' + css + '</head><body><div id="tabs"><ul>' + tab_lis + '</ul>' + tab_divs + 
   '</div>' + scripts +'</body></html>'
